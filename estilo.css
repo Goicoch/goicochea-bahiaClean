@@ -8,8 +8,8 @@
 
 .theBody {
         width: 100%;
-        background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-        background: cover;
+        background: rgb(75,156,222);
+background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 120PX 250px 400px 400px 100px;
@@ -70,10 +70,20 @@
 
 
 .cabecera img{
-        box-shadow: 4px 4px 4px rgb(250, 253, 255);
+        box-shadow: 4px 4,px 4px rgb(250, 253, 255);
         border-radius: 60px;
         border:dashed 5px rgb(77, 131, 232);
+        animation: roll 3s infinite;
+        transform: rotate(30deg);
     }  
+    @keyframes roll {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 .lista{
 
         margin: 5px;
@@ -131,11 +141,22 @@
         justify-content: space-around;
     }
 .imgParrafo IMG{
+        animation: skew 2s infinite;
+        transform: skew(10deg);
+        animation-direction: alternate;
         border: 3px dashed black;
         border-radius: 65px 65px 65px;
         width: 400PX;
         height: 400PX;
     }
+    @keyframes skew {
+        0% {
+          transform: skewX(10deg);
+        }
+        100% {
+          transform: skewX(-10deg);
+        }
+      }
 .imgParrafo P{
         overflow: auto;
         width: 400PX;
@@ -189,9 +210,250 @@
     padding: 3px;
     border: solid 4px rgb(166, 144, 212);
 }
+/********* Grid Layout ubicacion.html *********/
+
+.theBodyUbi{
+    background: rgb(75,156,222);
+    background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
+    width:100%
+}
+@media only screen and (max-width:480px) {
+    .theBodyUbi{
+        
+        width: auto;
+    }
+    
+}   
+.mainClass{
+        background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
+        background: cover;
+        width: 100%;
+        display: grid;
+        grid-template-rows:repeat(3, 1fr);            
+        grid-template-columns:1fr; 
+
+}
+@media only screen and (max-width:480px) {
+    .mainClass{
+        grid-template-columns: 1fr;
+       width: auto;
+        
+    }
+
+        }
+
+.divTitulo{
+  
+    width:auto;
+    display: flex;
+    flex-direction:column;
+    grid-row: 1/2;
+    justify-items:center ;
+}
+.divTitulo h1{
+    display: inline-block;
+    transform: rotateX(50deg);
+    animation: one 2s infinite;
+    animation-direction: alternate;
+   
+}
+@keyframes one {
+    0% {
+      transform: rotateX(0);
+    }
+  
+    100% {
+      transform: rotateX(50deg);
+    }
+  }
+.divTitulo iframe{
+    
+    width: max-content;
+    
+}
+
+.parrafoUbicacion{
+    grid-row: 2/3;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.parrafoUbicacion p{
+    animation-name: stretch;
+    animation-duration: 3s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    width: 400px;
+    height: 400px;
+    
+
+}
+@keyframes stretch {
+    0% {
+      transform: scale(1);
+      background-color: rgb(208, 192, 246);
+      
+    }
+    50% {
+      background-color: rgb(41, 119, 214);
+    }
+    100% {
+      transform: scale(1.2);
+      background-color: rgb(152, 152, 246);
+    }
+  }
+
+.parrafoUbicacion img{
+
+    border-radius: 250px 250px 250px;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.flecha{
+    grid-row: 3/4;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.flecha img{
+    grid-column:1/2 ;
+    grid-row: 3/4;
+    width: 200px;
+    height: 200px;
+    animation: shake 2s infinite;
+  animation-direction: alternate;
+
+}
+@keyframes shake {
+    0% {
+      transform: skewY(10deg);
+    }
+    100% {
+      transform: skewY(-10deg);
+    }
+  }
+
+  /********* Grid Layout contactos.html *********/
+
+.bodycont{
+    background: rgb(75,156,222);
+    background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
+    width: 100%;
+
+}
+@media only screen and (max-width:480px) {
+    .bodycont{
+        grid-template-columns: 1fr;
+       width: auto;
+    }
+
+        }
+    
+.mainClass_Contacto{
+    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
+    background: cover;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+@media only screen and (max-width:480px) {
+    .mainClass_Contacto{
+        grid-template-columns: 1fr;
+        width: max-content;
+    }
+
+        }
+
+.tituloFormulario{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloFormulario img{
+    border-radius: 70px 70px 70px;
+    width: 150px;
+    height: 150px;
+    box-shadow:  15px 15px 5px rgb(72, 72, 146);
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@media only screen and (max-width:480px) {
+    .tituloFormulario img{
+        display: none;
+    }
+}
+.tituloFormulario h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    text-align: center; 
+    padding-bottom: 25px;
+    text-shadow:  15px 15px 5px rgb(72, 72, 146);
+    margin:15%;
+    margin-left: 25%;
+    transform: skewY(-10deg);
+}
+.formulario{
+    
+    
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.formularios input{
+   margin: 25px;
+    width:40%;
+    height: 40px;
+    background-color: #bcd6dc;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s; 
+}
+.formularios input:focus {
+    width: 300px;
+    font-size: 24px;
+ }
+ 
+
+.formulario h2{
+    margin-top: auto;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    text-align: center; 
+    padding-bottom: 25px;
+    text-shadow:  15px 15px 5px rgb(72, 72, 146);
+    }
+ 
+   
+    
 /********* Grid Layout herramientas.html *********/
 
 .bodyHerramientas{
+    background: rgb(75,156,222);
+background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
     width: 100%;
 }
 @media only screen and (max-width:480px) {
@@ -268,14 +530,22 @@
     grid-column: 2/3;
     grid-row:2/3;
     height: 900px;
+   
 }
+
 .iframeGrande p {
     border: dashed 3px rgb(110, 110, 192);
     height: 400px;
     font-size: 15px;
     overflow: auto;
+    
          
 }
+.iframeGrande h3:hover  {
+    -webkit-transform:scale(-1.3);
+    transform:scale(1.3);
+}
+
 .iframeGrande h3{
     color: rgb(0, 0, 0);
     font-size: 30px;
@@ -284,7 +554,9 @@
     text-shadow:  15px 15px 5px rgb(72, 72, 146);
     margin:12px;
    
+   
 }
+
 
 .imagenIframe {
    
@@ -299,9 +571,10 @@
 .imagenIframe iframe{
     height: 300px;
     border: dashed 3px rgb(110, 110, 192);
-
+    
 
 }
+
 .imagenIframe h3{
         color: rgb(0, 0, 0);
         font-size: 30px;
@@ -310,91 +583,17 @@
         text-shadow:  15px 15px 5px rgb(72, 72, 146);
         margin:12px;
 }
-/********* Grid Layout ubicacion.html *********/
-
-.theBodyUbi{
-    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-    background: cover;
-    width:100%
-}
-@media only screen and (max-width:480px) {
-    .theBodyUbi{
-        
-        width: auto;
-    }
-    
-}   
-.mainClass{
-        background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-        background: cover;
-        width: 100%;
-        display: grid;
-        grid-template-rows:repeat(3, 1fr);            
-        grid-template-columns:1fr; 
-
-}
-@media only screen and (max-width:480px) {
-    .mainClass{
-        grid-template-columns: 1fr;
-       width: auto;
-        
-    }
-
-        }
-
-.divTitulo{
-  
-    width:auto;
-    display: flex;
-    flex-direction:column;
-    grid-row: 1/2;
-    justify-items:center ;
-}
-.divTitulo h1{
-    display: inline-block;
-    
-   
-}
-.divTitulo iframe{
-  
-    width: max-content;
-    
-}
-.parrafoUbicacion{
-    grid-row: 2/3;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+.imagenIframe h3:hover  {
+    -webkit-transform:scale(-1.3);
+    transform:scale(1.3);
 }
 
-.parrafoUbicacion p{
-    width: 400px;
-    height: 400px;
-
-}
-.parrafoUbicacion img{
-    
-    width: 400px;
-    height: 400px;
-}
-.flecha{
-    grid-row: 3/4;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.flecha img{
-    grid-column:1/2 ;
-    grid-row: 3/4;
-    width: 200px;
-    height: 200px;
-
-}
 
 /********* Grid Layout Galeria.html *********/
 
 .bodygal{
+    background: rgb(75,156,222);
+    background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
     width:100%
 }
 @media only screen and (max-width:480px) {
@@ -448,114 +647,36 @@
     border: dashed 5px rgb(171, 171, 232);
     width: 90%;
     height: 600px;
-    
 }
+.imagen__grande h1:hover  {
+    -webkit-transform:scale(-1.3);
+    transform:scale(1.3);
+}
+
+
 .imagen__chica {
     width: 100%;
     grid-row: 2/3;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    
 }     
 .imagen__chica img{
    
     border: dashed 5px rgb(171, 171, 232);
     width: 250px;
-   height: 250px;
+   height: 250px;}
 
-}
-/********* Grid Layout contactos.html *********/
-
-.bodycont{
-    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-    background: cover;
-    width: 100%;
-
-}
-@media only screen and (max-width:480px) {
-    .bodycont{
-        grid-template-columns: 1fr;
-       width: auto;
-    }
-
-        }
-    
-.mainClass_Contacto{
-    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-    background: cover;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1 fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-}
-@media only screen and (max-width:480px) {
-    .mainClass_Contacto{
-        grid-template-columns: 1fr;
-       width: max-content;
-    }
-
-        }
-
-.tituloFormulario{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.tituloFormulario img{
-    border-radius: 70px 70px 70px;
-    width: 150px;
-    height: 150px;
-    box-shadow:  15px 15px 5px rgb(72, 72, 146);
-}
-@media only screen and (max-width:480px) {
-    .tituloFormulario img{
-        display: none;
-    }
-}
-.tituloFormulario h1{
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    text-align: center; 
-    padding-bottom: 25px;
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    margin:12px;
-
-}
-.formulario{
-    
-    margin: auto;
-    margin-bottom: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.formularios input{
-   
-    width:40%;
-    height: 40px;
-    background-color: #bcd6dc;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+   .imagen__chica img:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 }
 
-.formulario h2{
-    margin-top: auto;
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    text-align: center; 
-    padding-bottom: 25px;
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    }
- 
-   
-    
- 
+
+
 /******** Footer ********/
 
 .pieDePagina{
