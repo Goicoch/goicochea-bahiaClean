@@ -1,7 +1,7 @@
 /* reinicio de css */
 *{
     padding: 0;
-    margin: 0;
+    margin: 0; 
  }
 
 /* orden layout con grid */
@@ -9,7 +9,7 @@
 .theBody {
         width: 100%;
         background: rgb(75,156,222);
-background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
+        background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 120PX 250px 400px 400px 100px;
