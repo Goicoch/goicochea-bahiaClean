@@ -281,14 +281,8 @@
     
 }
 
-.parrafoUbicacion p{
-    animation-name: stretch;
-    animation-duration: 3s; 
-    animation-timing-function: ease-out; 
-    animation-delay: 0;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
+.card-text{
+   
     width: 400px;
     height: 400px;
     
@@ -364,7 +358,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1 fr 1fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.4fr 1fr 0.5fr;
 }
 @media only screen and (max-width:480px) {
     .mainClass_Contacto{
@@ -404,7 +398,7 @@
     color: rgb(0, 0, 0);
     font-size: 60px;
     text-align: center; 
-    padding-bottom: 25px;
+   
     text-shadow:  15px 15px 5px rgb(72, 72, 146);
     margin:15%;
     margin-left: 25%;
@@ -420,8 +414,8 @@
     align-items: center;
     justify-content: space-around;
 }
-.formularios input{
-   margin: 25px;
+.inputs{
+    
     width:40%;
     height: 40px;
     background-color: #bcd6dc;
@@ -431,12 +425,18 @@
     align-items: center;
     justify-content: space-around;
     transition: all 1s; 
+
 }
-.formularios input:focus {
-    width: 300px;
-    font-size: 24px;
+.formularios input{
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
  }
- 
+ .form-range{
+     margin: 0;
+ }
 
 .formulario h2{
     margin-top: auto;

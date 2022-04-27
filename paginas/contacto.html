@@ -43,16 +43,43 @@
             
             <div class="formularios">
             <h2>Contactanos</h2>
-            
-                <input type="text" placeholder="Nombre y Apellido" >
-          
+            <div class="input-group">
 
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+              </div>
             
-                <input type="email" placeholder="E mail">
-           
 
+        
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+
+                  <label for="exampleColorInput" class="form-label">Color picker</label>
+                  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
            
-                <textarea rows="5" cols="20" placeholder="Escriba sus comentarios aqui..."></textarea>
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>Elegi la opcion</option>
+                      <option value="1">Limpieza</option>
+                      <option value="2">Desinfeccion</option>
+                      <option value="3">Limpieza y Desinfeccion</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                    <input type="file" class="form-control" id="inputGroupFile01">
+                  </div>
+                  
+           
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escriba aqui</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
             
 
             
@@ -63,22 +90,75 @@
            
 
             
-                <input type="submit" value="Enviar información">
+                <input class="inputs" type="submit" value="Enviar información">
             
 
             
-                <label for="suscripcion">Suscribirme</label>
-                <input type="checkbox" value="Suscribirme">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                     Suscribirme
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                     Eliminar suscripcion
+                    </label>
+                  </div>
            
 
+                <input class="inputs" type="button" value="Enviar">
             
-                <input type="button" value="Enviar">
-            
+                <input class="inputs" type="reset" value="Borrar todo">
+   
+                <form class="row g-3">
 
-            
-                <input type="reset" value="Borrar todo">
-            </div>
-                
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Direccion</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Ciudad</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Elegi</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">CP</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                         Aceptar condiciones
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </div>
+                  </form>
                     
             </form>
     </main>
