@@ -281,13 +281,7 @@
     
 }
 
-.card-text{
-   
-    width: 400px;
-    height: 400px;
-    
 
-}
 @keyframes stretch {
     0% {
       transform: scale(1);
@@ -302,7 +296,7 @@
       background-color: rgb(152, 152, 246);
     }
   }
-
+ 
 .parrafoUbicacion img{
 
     border-radius: 250px 250px 250px;
@@ -352,14 +346,14 @@
 
         }
     
-.mainClass_Contacto{
+/*  .mainClass_Contacto{
     background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
     background: cover;
     width: 100%;
     display: grid;
     grid-template-columns: 1 fr 1fr;
-    grid-template-rows: 0.4fr 1fr 0.5fr;
-}
+    grid-template-rows: 0.4fr 1fr 0.3fr;
+}*/
 @media only screen and (max-width:480px) {
     .mainClass_Contacto{
         grid-template-columns: 1fr;
@@ -404,6 +398,7 @@
     margin-left: 25%;
     transform: skewY(-10deg);
 }
+/*  
 .formulario{
     
     
@@ -436,7 +431,7 @@
  }
  .form-range{
      margin: 0;
- }
+ }*/
 
 .formulario h2{
     margin-top: auto;
@@ -611,7 +606,7 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
        width: 100%;
        display: grid;
        grid-template-columns: 1 fr;
-       grid-template-rows: 1fr 0.5fr;
+       grid-template-rows: 1fr 0.2fr;
 
    }
 @media only screen and (max-width:480px) {
@@ -661,20 +656,21 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
     justify-content: space-around;
     align-items: center;
     
-}     
+}    
+ 
 .imagen__chica img{
    
     border: dashed 5px rgb(171, 171, 232);
-    width: 250px;
-   height: 250px;}
-
+    width: 350px;
+   height: 350px;}
+ /*  
    .imagen__chica img:hover {
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
 }
-
+*/
 
 
 /******** Footer ********/

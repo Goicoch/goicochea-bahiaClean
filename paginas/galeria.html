@@ -20,7 +20,7 @@
     <header  class="cabecera">
         <img src="../imagenes/logotipo-de-limpieza-del-servicio-emblema-compañía-ejemplo-vector-para-la-web-y-móvil-130634736.jpg" alt="logo bahia clean">
     
-        <nav class="navegadorCabecera">
+        <nav class="navegadorCabecera navbar-brand ">
          
              <ul class="lista">
                  <li class="secciones"><a href="../paginas/ubicacion.html"target="_blank" >Ubicacion</a></li>
@@ -35,21 +35,44 @@
      </header>
 
     <main class="mainClass_galeria">
+        <div class="container-fluid">
         <div class="imagen__grande"> 
             <h1>Informacion</h1>  
-            <img src="../imagenes/bc-img1.jpg" alt="imagen explicativa de limpieza">
-              
-              
+            <img class="img-fluid" src="../imagenes/bc-img1.jpg" alt="imagen explicativa de limpieza">
         </div>
+
         <div class="imagen__chica">
-            <img src="../imagenes/bc-img3.jpg" alt="sillas limpias">
-              <img src="../imagenes/bc-img2.jpg" alt="sillon limpio">
-              <img src="../imagenes/bc-img3.jpg" alt="sillas limpias">
-              <img src="../imagenes/bc-img2.jpg" alt="sillon limpio">
+            <h1>Imagenes</h1>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/bc-img2.jpg" class="d-block w-100" alt="sillon limpio">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            
               
         </div>
          
-     
+    </div>
         
     </main>
     <footer class="pieDePagina">
