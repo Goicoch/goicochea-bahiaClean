@@ -362,7 +362,7 @@
     }
 
         }
-    }
+  }
 .tituloFormulario{
     width: 100%;
     display: flex;
@@ -590,16 +590,16 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
  .bodygal{
     background: rgb(75,156,222);
     background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
-    width:100%
+    width:100%;
 }
-@media only screen and (max-width:480px) {
+/* @media only screen and (max-width:480px) {
     .bodygal{
         background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
        background: cover;
         width: auto;
     }
     
-}   
+}   */ 
 /*
 .mainClass_galeria{
        background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
