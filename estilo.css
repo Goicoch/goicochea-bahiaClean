@@ -346,9 +346,10 @@
 
         }
     
-/*  .mainClass_Contacto{
+  .mainClass_Contacto{
     background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
     background: cover;
+    /*
     width: 100%;
     display: grid;
     grid-template-columns: 1 fr 1fr;
@@ -361,7 +362,7 @@
     }
 
         }
-
+    }
 .tituloFormulario{
     width: 100%;
     display: flex;
@@ -586,7 +587,7 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
 
 /********* Grid Layout Galeria.html *********/
 
-.bodygal{
+ .bodygal{
     background: rgb(75,156,222);
     background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
     width:100%
@@ -599,7 +600,7 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
     }
     
 }   
-
+/*
 .mainClass_galeria{
        background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
        background: cover;
@@ -627,8 +628,8 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
     align-items:center;
     
 
-}
-.imagen__grande h1{
+}*/
+.col h1{
     color: rgb(0, 0, 0);
     font-size: 60px;
     text-align: center; 
@@ -651,18 +652,19 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
 
 .imagen__chica {
     width: 100%;
-    grid-row: 2/3;
+    border-radius: 200px;
+    /*  grid-row: 2/3;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;*/
     
 }    
  
-.imagen__chica img{
+.imagen__chicaimg{
    
     border: dashed 5px rgb(171, 171, 232);
     width: 350px;
-   height: 350px;}
+   height: 350px;} 
  /*  
    .imagen__chica img:hover {
     -webkit-transform: rotateY(180deg);
@@ -675,11 +677,12 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
 
 /******** Footer ********/
 
-.pieDePagina{
-    width: 100%;
+  .pieDePagina{
     background-image: url(./imagenes/descarga.jpg) ;
-    border: 4px dotted gray;
-    }
+    background-size: cover;}
+    /* border: 4px dotted gray;
+    width: 100%;
+    
     
 @media only screen and (max-width:480px) {
     .pieDePagina{
@@ -693,6 +696,6 @@ background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9
     .listaPiePag li{
         padding: 8PX;
         display: inline-block;
-    }
-   
+    }*/
+    
             

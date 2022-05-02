@@ -16,74 +16,81 @@
 </head>
 
 <body class="bodygal">
-    <header  class="cabecera">
-        <img src="../imagenes/logotipo-de-limpieza-del-servicio-emblema-compañía-ejemplo-vector-para-la-web-y-móvil-130634736.jpg" alt="logo bahia clean">
-    
-        <nav class="navegadorCabecera">
-         
-             <ul class="lista">
-                 <li class="secciones"><a href="../paginas/ubicacion.html">Ubicacion</a></li>
-                 <li class="secciones"><a href="../index.html">Home</a></li>
-                 <li class="secciones"><a href="../paginas/contacto.html"> Contactanos</a></li>
-                 <li class="secciones"><a href="../paginas/galeria.html">Galeria</a> </li>
-                 <li class="secciones"><a href="../paginas/herramientas.html">Herramientas</a></li>
-                 
-             </ul>
+  
+    <header class="p-3 bg-dark text-black cabecera">
      
-         </nav>
-     </header>
-
-    <main class="mainClass_galeria">
-        <div class="container-fluid">
-        <div class="imagen__grande"> 
-            <h1>Informacion</h1>  
-            <img class="img-fluid" src="../imagenes/bc-img1.jpg" alt="imagen explicativa de limpieza">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img class="bi me-2" width="70" height="72"src="../imagenes/logotipo-de-limpieza-del-servicio-emblema-compañía-ejemplo-vector-para-la-web-y-móvil-130634736.jpg" alt="logo bahia clean">
+          </a>
+          
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="../index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="../paginas/ubicacion.html" class="nav-link px-2 text-white ">Ubicacion</a></li>
+           
+            <li><a href="../paginas/contacto.html" class="nav-link px-2 text-white">Contactanos</a></li>
+            <li><a href="../paginas/galeria.html" class="nav-link px-2 text-secondary">Galeria</a></li>
+            <li><a href="../paginas/herramientas.html" class="nav-link px-2 text-white">Herramientas</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          
         </div>
+      </div>
+    </header>
+ 
 
-        <div class="imagen__chica">
-            <h1>Imagenes</h1>
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../imagenes/bc-img2.jpg" class="d-block w-100" alt="sillon limpio">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+ <div class="container">
+  <div class="col"><h1>Informacion</h1></div>
+  <img class="img-fluid imagen__chica" src="../imagenes/bc-img1.jpg" alt="imagen explicativa de limpieza">
+ </div>
 
-            
-              
-        </div>
-         
+ <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="rounded mx-auto d-block imagen__chicaimg" src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
     </div>
-        
-    </main>
-    <footer class="pieDePagina">
-        <ul class="listaPiePag">
-            <li><a href="https://www.facebook.com/Bahiaclean.ig/" target="_blank"><i class="fa-brands fa-facebook"></i> </a></li>
-            <li><a href="https://www.instagram.com/bahiaclean.ig" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://es-la.facebook.com/kaakiii" target="_blank">Autor Iñaki Goicochea</a></li>
-            <li><a href="https://goo.gl/maps/JNMpVuXmDfee2kTr6" target="_blank"><i class="fa-solid fa-earth-africa"></i>Bahia Blanca CP 8000</a></li>
-            <li><b>Sitio web en desarrollo</b></li><i class="fa-solid fa-face-grin-beam-sweat"></i>
-       </ul>
-   </footer>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <div class="carousel-item">
+      <img class="rounded mx-auto d-block imagen__chicaimg" src="../imagenes/bc-img2.jpg" class="d-block w-100" alt="sillon limpio">
+    </div>
+    <div class="carousel-item">
+      <img class="rounded mx-auto d-block imagen__chicaimg" src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
+    </div>
+    <div class="carousel-item">
+      <img class="rounded mx-auto d-block imagen__chicaimg" src="../imagenes/bc-img3.jpg" class="d-block w-100" alt="silla limpia">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<footer class="pieDePagina d-flex flex-wrap justify-content-between align-items-center py-3 ">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <span class="text-muted">© 2022 Bahia Clean</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a href="https://www.facebook.com/Bahiaclean.ig/" target="_blank"><i class="fa-brands fa-facebook"></i> </a></li>
+    <li class="ms-3"><a href="https://www.instagram.com/bahiaclean.ig" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    <li class="ms-3"><a href="https://goo.gl/maps/JNMpVuXmDfee2kTr6" target="_blank"><i class="fa-solid fa-earth-africa"></i>Bahia Blanca </a></li>
+  </ul>
+</footer>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
