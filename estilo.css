@@ -338,31 +338,14 @@
     width: 100%;
 
 }
-@media only screen and (max-width:480px) {
-    .bodycont{
-        grid-template-columns: 1fr;
-       width: auto;
-    }
 
-        }
     
   .mainClass_Contacto{
     background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
     background: cover;
-    /*
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1 fr 1fr;
-    grid-template-rows: 0.4fr 1fr 0.3fr;
-}*/
-@media only screen and (max-width:480px) {
-    .mainClass_Contacto{
-        grid-template-columns: 1fr;
-        width: max-content;
-    }
-
-        }
   }
+
+ 
 .tituloFormulario{
     width: 100%;
     display: flex;
