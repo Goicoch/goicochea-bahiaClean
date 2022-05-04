@@ -1,5 +1,5 @@
 .formularios h2 {
-  font-size: 60px;
+  font-size: 45px;
   margin-top: auto;
   color: black;
   font-size: 60px;
@@ -7,5 +7,6 @@
   padding-bottom: 25px;
   text-shadow: 15px 15px 5px #484892; }
 
-.formularios input-group {
-  padding: 45px; }
+body {
+  background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
+  background: cover; }

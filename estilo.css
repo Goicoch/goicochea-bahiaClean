@@ -331,91 +331,12 @@
   }
 
   /********* Grid Layout contactos.html *********/
-
-.bodycont{
+ .bodycont{
     background: rgb(75,156,222);
     background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
     width: 100%;
 
 }
-
-    
-  .mainClass_Contacto{
-    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-    background: cover;
-  }
-
- 
-.tituloFormulario{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.tituloFormulario img{
-    border-radius: 70px 70px 70px;
-    width: 150px;
-    height: 150px;
-    box-shadow:  15px 15px 5px rgb(72, 72, 146);
-    animation: roll 3s infinite;
-    transform: rotate(30deg);
-}
-@keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-@media only screen and (max-width:480px) {
-    .tituloFormulario img{
-        display: none;
-    }
-}
-.tituloFormulario h1{
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    text-align: center; 
-   
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    margin:15%;
-    margin-left: 25%;
-    transform: skewY(-10deg);
-}
-/*  
-.formulario{
-    
-    
-    margin-bottom: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.inputs{
-    
-    width:40%;
-    height: 40px;
-    background-color: #bcd6dc;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transition: all 1s; 
-
-}
-.formularios input{
-    margin: 25px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 40px;
- }
- .form-range{
-     margin: 0;
- }*/
 
 .formulario h2{
     margin-top: auto;
