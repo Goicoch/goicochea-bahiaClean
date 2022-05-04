@@ -330,22 +330,10 @@
     }
   }
 
-  /********* Grid Layout contactos.html *********/
- .bodycont{
-    background: rgb(75,156,222);
-    background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
-    width: 100%;
 
-}
+ 
 
-.formulario h2{
-    margin-top: auto;
-    color: rgb(0, 0, 0);
-    font-size: 60px;
-    text-align: center; 
-    padding-bottom: 25px;
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    }
+
  
    
     

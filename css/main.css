@@ -1,12 +1,18 @@
 .formularios h2 {
-  font-size: 45px;
+  font-size: 60px;
   margin-top: auto;
   color: black;
-  font-size: 60px;
   text-align: center;
   padding-bottom: 25px;
   text-shadow: 15px 15px 5px #484892; }
 
-body {
-  background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-  background: cover; }
+* {
+  padding: 0;
+  margin: 0; }
+  * body {
+    background: #4b9cde;
+    background: linear-gradient(191deg, #4b9cde 39%, rgba(225, 225, 244, 0.992508) 50%, #958be7 69%); }
+    * body navbar {
+      background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
+      background: cover;
+      background-color: #9a9aed; }
