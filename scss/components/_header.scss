@@ -1,0 +1,15 @@
+.logo-gira{
+    box-shadow: 4px 4,px 4px rgb(250, 253, 255);
+    border-radius: 60px;
+    border:dashed 5px rgb(77, 131, 232);
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}  
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
