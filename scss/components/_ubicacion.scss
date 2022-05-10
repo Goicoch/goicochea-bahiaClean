@@ -1,0 +1,59 @@
+.mainClassU{
+    width: 100%;
+    display: grid;
+    grid-template-rows:0.5fr repeat (2, 1fr);            
+    grid-template-columns:1fr; 
+
+}
+.divTitulo{
+  
+    width:auto;
+    display: flex;
+    flex-direction:column;
+    grid-row: 1/2;
+    justify-items:center ;
+}
+.divTitulo h1{
+    color: rgb(143, 143, 220);
+    font-size: 70px;
+    text-align: center; 
+    padding-bottom: 10px;
+    text-shadow:  5px 5px 15px rgb(0, 0, 0);
+    margin:12px;
+    transform: rotateX(50deg);
+    animation: one 2s infinite;
+    animation-direction: alternate;
+   
+}
+.parrafoUbicacion{
+    grid-row: 2/3;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.parrafoUbicacion img{
+
+    border-radius: 250px 250px 250px;
+    width: 400px;
+    height: 400px;
+    
+}
+.flecha{
+    margin-top: 50px;
+    grid-row: 3/4;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.flecha img{
+    grid-column:1/2 ;
+    grid-row: 3/4;
+    width: 200px;
+    height: 200px;
+    animation: shake 2s infinite;
+  animation-direction: alternate;
+
+}
