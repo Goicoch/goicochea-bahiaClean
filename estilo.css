@@ -1,21 +1,7 @@
-/* reinicio de css */
-*{
-    padding: 0;
-    margin: 0; 
- }
 
-/* orden layout con grid */
 
-.theBody {
-        width: 100%;
-        background: rgb(75,156,222);
-        background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 120PX 250px 400px 400px 100px;
-        grid-column-gap: 0px;
-        grid-row-gap: 4px;
-        }
+      
+       
         
      
   
@@ -25,18 +11,10 @@
         .imgParrafo{ grid-area: 3 / 1 / 4 / 6; }
         .listaPreciosTitulo{ grid-area: 4 / 1 / 5 / 6; }
         .pieDePagina { grid-area: 5 / 1 / 6 / 6; }
-       
-@media only screen and (max-width:480px) {
-            .theBody{
-                width:auto;
-                grid-template-columns: 1fr;
-            }
-            
-        }
 
        
        
-        /********* flexbox  *********/
+        
 
 .cabecera  { 
         width: 100%;
@@ -69,156 +47,6 @@
                     
 
 
-.logo-gira{
-        box-shadow: 4px 4px 4px rgb(250, 253, 255);
-        border-radius: 60px;
-        border:dashed 5px rgb(77, 131, 232);
-        animation: roll 3s infinite;
-        transform: rotate(30deg);
-    }  
-    @keyframes roll {
-        0% {
-          transform: rotate(0);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-.lista{
-
-        margin: 5px;
-        padding: 10px;
-            
-    }
-  
-
-
-
-.lista li{
-
-        font-weight:bold;
-        font-style: italic;
-        font-family: cursive;
-        background-color: rgb(132, 175, 241);
-        border-radius: 25px 25px 25px;
-        border: 4px double rgb(146, 163, 201);
-        box-shadow: 5px 5px 5px rgb(250, 253, 255);
-        padding: 8px;
-        display: inline-block;
-        font-size: 16px;
-        justify-content: space-between;
-    }
-  
-.mainClass .divTitulo{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-    }
-.divTitulo h1{
-        color: rgb(143, 143, 220);
-        font-size: 70px;
-        text-align: center; 
-        padding-bottom: 25px;
-        text-shadow:  5px 5px 15px rgb(210, 219, 224);
-        margin:12px;
-    }
-    
-.divTitulo h2{
-        color: rgb(143, 143, 220);
-        font-size: 40px;
-        text-align: center; 
-        padding-bottom: 90px;
-        text-shadow:  5px 5px 15px rgb(210, 219, 224);
-        margin:12px;
-    }
-.imgParrafo{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-.imgParrafo IMG{
-        animation: skew 2s infinite;
-        transform: skew(10deg);
-        animation-direction: alternate;
-        border: 3px dashed black;
-        border-radius: 65px 65px 65px;
-        width: 400PX;
-        height: 400PX;
-    }
-    @keyframes skew {
-        0% {
-          transform: skewX(10deg);
-        }
-        100% {
-          transform: skewX(-10deg);
-        }
-      }
-.imgParrafo P{
-        overflow: auto;
-        width: 400PX;
-        height: 400PX;
-    }
-.listaPreciosTitulo{
-        width: 100%;
-        margin-top: 25px;
-        border: dashed 2px rgb(125, 163, 210);
-        padding-bottom: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-@media only screen and (max-width:480px) {
-        .listaPreciosTitulo{
-            width: min-content;
-           margin: auto;
-        }
-
-            }
-            
-    
-
-.listaPreciosTitulo h3{
-        display: inline-block;
-        color: rgb(143, 143, 220);
-        font-size: 40px;
-        text-align: center; 
-        padding-top: 20px;
-        padding-bottom: 25px;
-        text-shadow:  5px 5px 15px rgb(0, 0, 0);
-}
-.tabla  { 
-        margin-bottom:2rem; 
-       
-        background-color: rgb(231, 227, 240);;
-        border: dashed 3px rgb(178, 157, 218);
-}
-
-
-.tabla th{
-    padding: 3px;
-    border: solid 4px rgb(123, 75, 220);
-}
-.tabla td{
-    padding: 3px;
-    border: solid 4px rgb(166, 144, 212);
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -232,66 +60,7 @@
     
 
 
-.main__heramientas {
-    background-image: url(../bahiaclean-goicochea/imagenes/vectoresceleste.webp);
-    background: cover; 
-    width: 100%;
-    display: grid;
-    grid-template-rows:200px 800px 250px;            
-    grid-template-columns:repeat(2, 1fr) ; 
-         
-}
 
 
-@media only screen and (max-width:480px) {
-    .main__heramientas{
-        grid-template-columns: 1fr;
-        
-        
-    }
-
-        }
-
- */
-
-
-/********* Grid Layout Galeria.html *********/
-
-
-
-.imagen__grande{
-    margin: auto;
-    display: flex;
-    width: 85%;
-    flex-direction: column;
-    grid-row: 1/2;
-    align-items:center;
-    
-
-}
-
-
-
-
-
-.imagen__chica {
-    width: 100%;
-    border-radius: 200px;
-    /*  grid-row: 2/3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;*/
-    
-}    
- 
-
- /*  
-   .imagen__chica img:hover {
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-}
-*/
 
 

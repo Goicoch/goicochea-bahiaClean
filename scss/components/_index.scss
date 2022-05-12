@@ -1,0 +1,77 @@
+.theBody {
+display: grid;
+
+}
+.mainClass .divTitulo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.divTitulo h1{
+    color: rgb(143, 143, 220);
+    font-size: 70px;
+    text-align: center; 
+    padding-bottom: 25px;
+    text-shadow:  5px 5px 15px rgb(210, 219, 224);
+    margin:12px;
+}
+
+.divTitulo h2{
+    color: rgb(143, 143, 220);
+    font-size: 40px;
+    text-align: center; 
+    padding-bottom: 90px;
+    text-shadow:  5px 5px 15px rgb(210, 219, 224);
+    margin:12px;
+}
+.imgParrafo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgParrafo IMG{
+    animation: skew 2s infinite;
+    transform: skew(10deg);
+    animation-direction: alternate;
+    border: 3px dashed black;
+    border-radius: 65px 65px 65px;
+    width: 400PX;
+    height: 400PX;
+}
+@keyframes skew {
+    0% {
+      transform: skewX(10deg);
+    }
+    100% {
+      transform: skewX(-10deg);
+    }
+  }
+.imgParrafo P{
+    overflow: auto;
+    width: 400PX;
+    height: 400PX;
+}
+.listaPreciosTitulo{
+    width: 100%;
+    margin-top: 25px;
+    border: dashed 2px rgb(125, 163, 210);
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaPreciosTitulo h3{
+        display: inline-block;
+        color: rgb(143, 143, 220);
+        font-size: 40px;
+        text-align: center; 
+        padding-top: 20px;
+        padding-bottom: 25px;
+        text-shadow:  5px 5px 15px rgb(0, 0, 0);
+}

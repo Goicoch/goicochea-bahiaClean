@@ -1,6 +1,6 @@
 .col h1{
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: map-get($tamanioTitle, tituloh1 );
     text-align: center; 
     padding-bottom: 25px;
     text-shadow:  15px 15px 5px rgb(72, 72, 146);

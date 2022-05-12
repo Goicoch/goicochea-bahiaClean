@@ -1,21 +1,26 @@
 .formularios h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formularios h2 {
   font-size: 60px;
   margin-top: auto;
   color: black;
-  text-align: center;
   padding-bottom: 25px;
   text-shadow: 15px 15px 5px #484892; }
 
 * {
   padding: 0;
   margin: 0; }
-  * body {
-    background: #4b9cde;
-    background: linear-gradient(191deg, #4b9cde 39%, rgba(225, 225, 244, 0.992508) 50%, #958be7 69%); }
-    * body .navbar {
-      background-color: #9a9aed; }
-      * body .navbar .nav-link {
-        font-style: italic; }
+
+body {
+  background: #4b9cde;
+  background: linear-gradient(191deg, #4b9cde 39%, rgba(225, 225, 244, 0.992508) 50%, #958be7 69%); }
+  body .navbar {
+    background-color: #9a9aed; }
+    body .navbar .nav-link {
+      font-style: italic; }
 
 .logo-gira {
   box-shadow: 4px 4, px 4px #fafdff;
@@ -216,3 +221,76 @@
   background-size: cover;
   border: 4px dotted gray;
   width: 100%; }
+
+.theBody {
+  display: grid; }
+
+.mainClass .divTitulo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.divTitulo h1 {
+  color: #8f8fdc;
+  font-size: 70px;
+  text-align: center;
+  padding-bottom: 25px;
+  text-shadow: 5px 5px 15px #d2dbe0;
+  margin: 12px; }
+
+.divTitulo h2 {
+  color: #8f8fdc;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 90px;
+  text-shadow: 5px 5px 15px #d2dbe0;
+  margin: 12px; }
+
+.imgParrafo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.imgParrafo IMG {
+  animation: skew 2s infinite;
+  transform: skew(10deg);
+  animation-direction: alternate;
+  border: 3px dashed black;
+  border-radius: 65px 65px 65px;
+  width: 400PX;
+  height: 400PX; }
+
+@keyframes skew {
+  0% {
+    transform: skewX(10deg); }
+  100% {
+    transform: skewX(-10deg); } }
+
+.imgParrafo P {
+  overflow: auto;
+  width: 400PX;
+  height: 400PX; }
+
+.listaPreciosTitulo {
+  width: 100%;
+  margin-top: 25px;
+  border: dashed 2px #7da3d2;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.listaPreciosTitulo h3 {
+  display: inline-block;
+  color: #8f8fdc;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-shadow: 5px 5px 15px black; }

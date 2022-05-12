@@ -2,7 +2,7 @@
     font-size:$tamanioTitulos;
     margin-top: auto;
     color: rgb(0, 0, 0);
-    text-align: center; 
+   @extend %title-center;
     padding-bottom: 25px;
     text-shadow:$estiloTitulo;
 }
