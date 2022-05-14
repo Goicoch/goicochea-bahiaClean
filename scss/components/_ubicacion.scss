@@ -57,3 +57,12 @@
   animation-direction: alternate;
 
 }
+.miMapa{
+    width: 600px;
+}
+
+@media (max-width:768px){
+    .miMapa{ width:100%;}
+   
+    
+}
