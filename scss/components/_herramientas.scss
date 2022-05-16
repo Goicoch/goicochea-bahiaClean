@@ -58,23 +58,12 @@
     grid-column: 2/3;
     grid-row:2/3;
     height: 900px;
-   
-}
-
-.iframeGrande p {
-    border: dashed 3px rgb(110, 110, 192);
-    height: 400px;
-    font-size: 15px;
-    overflow: auto;
-    
-         
-}
-.iframeGrande h3:hover  {
-    -webkit-transform:scale(-1.3);
-    transform:scale(1.3);
-}
-
-.iframeGrande h3{
+    p {
+        border: dashed 3px rgb(110, 110, 192);
+        height: 400px;
+        font-size: 15px;
+        overflow: auto;
+        h3{
     color: rgb(0, 0, 0);
     font-size: 30px;
     text-align: center; 
@@ -84,7 +73,21 @@
    
    
 }
+}
+       
+}
+.iframeGrande h3:hover  {
+    -webkit-transform:scale(-1.3);
+    transform:scale(1.3);
+}
 
+@media (max-width:768px){
+    .iframeGrande{ 
+        flex-direction: column;
+      justify-content: center;
+        
+}
+}
 
 .imagenIframe {
    

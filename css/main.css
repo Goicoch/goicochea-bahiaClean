@@ -195,6 +195,16 @@ body {
   animation: shake 2s infinite;
   animation-direction: alternate; }
 
+.miMapa {
+  width: 600px; }
+
+@media (max-width: 768px) {
+  .miMapa {
+    width: 100%; }
+  .parrafoUbicacion {
+    flex-direction: column;
+    justify-content: center; } }
+
 .col h1 {
   color: black;
   font-size: 60px;

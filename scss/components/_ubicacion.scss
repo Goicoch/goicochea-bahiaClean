@@ -46,23 +46,32 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-
+    img{
+        grid-column:1/2 ;
+        grid-row: 3/4;
+        width: 200px;
+        height: 200px;
+        animation: shake 2s infinite;
+        animation-direction: alternate;
+    
 }
-.flecha img{
-    grid-column:1/2 ;
-    grid-row: 3/4;
-    width: 200px;
-    height: 200px;
-    animation: shake 2s infinite;
-  animation-direction: alternate;
-
 }
 .miMapa{
     width: 600px;
 }
 
 @media (max-width:768px){
-    .miMapa{ width:100%;}
-   
+    .miMapa{ width:100%;
+        
+}
+  .parrafoUbicacion {
+      flex-direction: column;
+      justify-content: center;
+  }
+  .flecha{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
     
 }
