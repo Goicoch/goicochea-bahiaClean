@@ -2,21 +2,26 @@
     width: 100%;
     display: grid;
     grid-template-rows: 200px 500px ;
-
+    grid-template-columns: 1fr 1fr;
  }
  @media (max-width:768px) {
     .main__heramientas {
         grid-template-columns: 1fr;
         width: auto;
-         grid-template-rows: 200px 500px ;
-    }
-    .titHerramientas h2{
+        }
+         .titHerramientas h2{
         display: none;
  
          }
          
-
+         .iframeGrande h3{
+        display: none;}
+        .iframeGrande p{
+            display: none;
         }
+
+}
+        
 
 .titHerramientas{
     width: 100%;
@@ -63,18 +68,19 @@
         font-size: 15px;
         overflow: auto;
         h3{
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    text-align: center; 
-    padding-bottom: 25px;
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    margin:12px;
+             color: rgb(0, 0, 0);
+             font-size: 30px;
+             text-align: center; 
+             padding-bottom: 25px;
+             text-shadow:  15px 15px 5px rgb(72, 72, 146);
+             margin:12px;
    
    
-}
+        }
 }
        
 }
+
 .iframeGrande h3:hover  {
     -webkit-transform:scale(-1.3);
     transform:scale(1.3);

@@ -38,14 +38,18 @@ body {
 .main__heramientas {
   width: 100%;
   display: grid;
-  grid-template-rows: 200px 500px; }
+  grid-template-rows: 200px 500px;
+  grid-template-columns: 1fr 1fr; }
 
 @media (max-width: 768px) {
   .main__heramientas {
     grid-template-columns: 1fr;
-    width: auto;
-    grid-template-rows: 200px 500px; }
+    width: auto; }
   .titHerramientas h2 {
+    display: none; }
+  .iframeGrande h3 {
+    display: none; }
+  .iframeGrande p {
     display: none; } }
 
 .titHerramientas {
@@ -273,6 +277,13 @@ body {
   border-radius: 65px 65px 65px;
   width: 400PX;
   height: 400PX; }
+
+@media (max-width: 768px) {
+  .imgParrafo IMG {
+    animation: none;
+    transform: none;
+    height: 350PX;
+    width: 350PX; } }
 
 @keyframes skew {
   0% {
