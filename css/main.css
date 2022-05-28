@@ -15,7 +15,7 @@
   margin: 0; }
 
 body {
-  background: #4b9cde;
+  background: #9a9aed;
   background: linear-gradient(191deg, #4b9cde 39%, rgba(225, 225, 244, 0.992508) 50%, #958be7 69%); }
   body .navbar {
     background-color: #9a9aed; }
@@ -151,18 +151,19 @@ body {
   grid-template-rows: 0.5fr repeat 2, 1fr;
   grid-template-columns: 1fr; }
 
-.divTitulo {
+.divTituloU {
   width: auto;
   display: flex;
   flex-direction: column;
   grid-row: 1/2;
   justify-items: center; }
 
-.divTitulo h1 {
+.divTituloU h1 {
   color: #8f8fdc;
   font-size: 70px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   text-shadow: 5px 5px 15px black;
   margin: 12px;
   transform: rotateX(50deg);
@@ -174,12 +175,16 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: center; }
+  height: 500px; }
+
+.card {
+  overflow: auto; }
 
 .parrafoUbicacion img {
   border-radius: 250px 250px 250px;
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  margin-left: 70px; }
 
 .flecha {
   margin-top: 50px;
@@ -196,7 +201,8 @@ body {
     animation-direction: alternate; }
 
 .miMapa {
-  width: 600px; }
+  width: 600px;
+  padding-bottom: 70px; }
 
 @media (max-width: 768px) {
   .miMapa {
@@ -248,15 +254,15 @@ body {
   justify-content: center; }
 
 .divTitulo h1 {
-  color: #8f8fdc;
-  font-size: 70px;
+  color: #03030e;
+  font-size: 60px;
   text-align: center;
   padding-bottom: 25px;
   text-shadow: 5px 5px 15px #d2dbe0;
   margin: 12px; }
 
 .divTitulo h2 {
-  color: #8f8fdc;
+  color: #03030e;
   font-size: 40px;
   text-align: center;
   padding-bottom: 90px;
@@ -278,20 +284,25 @@ body {
   width: 400PX;
   height: 400PX; }
 
-@media (max-width: 768px) {
-  .imgParrafo IMG {
-    animation: none;
-    transform: none;
-    height: 350PX;
-    width: 350PX; } }
-
 @keyframes skew {
   0% {
     transform: skewX(10deg); }
   100% {
     transform: skewX(-10deg); } }
 
+@media (max-width: 768px) {
+  .imgParrafo IMG {
+    animation: none;
+    transform: none;
+    height: 350PX;
+    width: 350PX; }
+  .imgParrafo P {
+    margin-top: 60px; } }
+
 .imgParrafo P {
+  padding-right: 45px;
+  padding-left: 30px;
+  border-left: 5px dashed rgba(108, 97, 231, 0.411);
   overflow: auto;
   width: 400PX;
   height: 400PX; }

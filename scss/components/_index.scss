@@ -9,24 +9,27 @@ display: grid;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    
 }
 .divTitulo h1{
-    color: rgb(143, 143, 220);
-    font-size: 70px;
+    color:  rgb(3, 3, 14);
+    font-size: $tamanioTitulos;
     text-align: center; 
     padding-bottom: 25px;
     text-shadow:  5px 5px 15px rgb(210, 219, 224);
     margin:12px;
+   
 }
-
 .divTitulo h2{
-    color: rgb(143, 143, 220);
+    color: rgb(3, 3, 14);
     font-size: 40px;
     text-align: center; 
     padding-bottom: 90px;
     text-shadow:  5px 5px 15px rgb(210, 219, 224);
     margin:12px;
 }
+
+
 .imgParrafo{
     width: 100%;
     display: flex;
@@ -42,14 +45,6 @@ display: grid;
     width: 400PX;
     height: 400PX;
 }
-@media (max-width:768px){
-    .imgParrafo IMG{
-        animation:none;
-        transform: none;
-        height: 350PX;
-        width: 350PX;
-    }
-}
 @keyframes skew {
     0% {
       transform: skewX(10deg);
@@ -58,7 +53,25 @@ display: grid;
       transform: skewX(-10deg);
     }
   }
+
+@media (max-width:768px){
+    .imgParrafo IMG{
+        animation:none;
+        transform: none;
+        height: 350PX;
+        width: 350PX;
+        
+    }
+    .imgParrafo P{
+       margin-top: 60px;
+
+    }
+}
+
 .imgParrafo P{
+    padding-right: 45px;
+    padding-left: 30px;
+    border-left: 5px dashed rgba(108, 97, 231, 0.411);
     overflow: auto;
     width: 400PX;
     height: 400PX;

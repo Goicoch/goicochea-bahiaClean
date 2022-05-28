@@ -5,7 +5,7 @@
     grid-template-columns:1fr; 
 
 }
-.divTitulo{
+.divTituloU{
   
     width:auto;
     display: flex;
@@ -13,11 +13,12 @@
     grid-row: 1/2;
     justify-items:center ;
 }
-.divTitulo h1{
+.divTituloU h1{
     color: rgb(143, 143, 220);
     font-size: 70px;
     text-align: center; 
-    padding-bottom: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     text-shadow:  5px 5px 15px rgb(0, 0, 0);
     margin:12px;
     transform: rotateX(50deg);
@@ -30,15 +31,19 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
+    height: 500px;
     
+}
+.card{
+    overflow: auto;
+
 }
 .parrafoUbicacion img{
 
     border-radius: 250px 250px 250px;
     width: 400px;
     height: 400px;
-    
+    margin-left: 70px;
 }
 .flecha{
     margin-top: 50px;
@@ -56,8 +61,13 @@
     
 }
 }
+
+
+    
 .miMapa{
     width: 600px;
+    padding-bottom: 70px;
+    
 }
 
 @media (max-width:768px){
