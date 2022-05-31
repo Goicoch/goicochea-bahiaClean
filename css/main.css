@@ -263,6 +263,15 @@ body {
   .pieDePagina .nav li {
     margin-right: 22px; }
 
+i {
+  color: white; }
+
+li a {
+  color: white; }
+
+footer span {
+  color: white; }
+
 .mainClass .divTitulo {
   width: 100%;
   display: flex;
