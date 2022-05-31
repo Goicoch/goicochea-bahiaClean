@@ -1,7 +1,4 @@
-.theBody {
-display: grid;
 
-}
 .mainClass .divTitulo{
     width: 100%;
     display: flex;
@@ -82,7 +79,6 @@ display: grid;
     border: dashed 2px rgb(125, 163, 210);
     padding-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
