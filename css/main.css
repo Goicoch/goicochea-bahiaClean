@@ -213,11 +213,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    height: 750px; }
   .flecha {
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .card {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 60px; } }
 
 .container {
   display: flex;
