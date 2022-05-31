@@ -10,6 +10,10 @@
   padding-bottom: 25px;
   text-shadow: 8px 8px 5px white; }
 
+@media (max-width: 768px) {
+  .formularios h2 {
+    font-size: 50px; } }
+
 * {
   padding: 0;
   margin: 0; }
@@ -224,7 +228,7 @@ body {
   color: black;
   font-size: 60px;
   text-shadow: 15px 15px 5px #484892;
-  padding-right: 50px;
+  padding-right: 40px;
   padding-bottom: 60px; }
 
 .imagen__chica {
@@ -243,6 +247,13 @@ body {
   border: dashed 6px #cfcfe9;
   width: 400px;
   height: 350px; }
+
+@media (max-width: 768px) {
+  .col h1 {
+    font-size: 50px; }
+  .rounded {
+    width: 250px;
+    height: 250px; } }
 
 .pieDePagina {
   background-color: rgba(36, 120, 255, 0.279);
@@ -304,7 +315,11 @@ body {
     height: 350PX;
     width: 350PX; }
   .imgParrafo P {
-    margin-top: 60px; } }
+    margin-top: 60px; }
+  th {
+    font-size: 12px; }
+  .tipo {
+    font-size: 12px; } }
 
 .imgParrafo P {
   padding-right: 45px;
