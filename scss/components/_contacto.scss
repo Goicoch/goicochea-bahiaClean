@@ -6,7 +6,12 @@
     padding-bottom: 25px;
     text-shadow:$estiloTitulo;
 }
-    
+@media (max-width:768px){
+    .formularios h2{
+        font-size: 50px;
+    }
+}
+
 
 
 

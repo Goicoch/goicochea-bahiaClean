@@ -50,7 +50,6 @@
       transform: skewX(-8deg);
     }
   }
-
 @media (max-width:768px){
     .imgParrafo IMG{
         animation:none;
@@ -62,6 +61,12 @@
     .imgParrafo P{
        margin-top: 60px;
 
+    }
+    th{
+        font-size: 12px;
+    }
+    .tipo{
+        font-size: 12px;
     }
 }
 
