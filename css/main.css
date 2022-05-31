@@ -8,7 +8,7 @@
   margin-top: auto;
   color: black;
   padding-bottom: 25px;
-  text-shadow: 15px 15px 5px #484892; }
+  text-shadow: 8px 8px 5px white; }
 
 * {
   padding: 0;
@@ -39,7 +39,8 @@ body {
   width: 100%;
   display: grid;
   grid-template-rows: 200px 500px;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px; }
 
 @media (max-width: 768px) {
   .main__heramientas {
@@ -63,19 +64,19 @@ body {
   justify-content: center; }
 
 .titHerramientas h1 {
-  color: #8f8fdc;
-  font-size: 40px;
+  color: black;
+  font-size: 60px;
   text-align: center;
   padding-bottom: 10px;
-  text-shadow: 5px 5px 15px black;
+  text-shadow: 8px 8px 5px white;
   margin: 12px; }
 
 .titHerramientas h2 {
-  color: #8f8fdc;
+  color: #0b0b0e;
   font-size: 35px;
   text-align: center;
   padding-bottom: 20px;
-  text-shadow: 5px 5px 15px black;
+  text-shadow: 8px 8px 5px white;
   margin: 12px; }
 
 .iframeGrande {
@@ -93,15 +94,11 @@ body {
     overflow: auto; }
     .iframeGrande p h3 {
       color: black;
-      font-size: 30px;
+      font-size: 25px;
       text-align: center;
       padding-bottom: 25px;
       text-shadow: 15px 15px 5px #484892;
       margin: 12px; }
-
-.iframeGrande h3:hover {
-  -webkit-transform: scale(-1.3);
-  transform: scale(1.3); }
 
 .imagenIframe {
   display: flex;
@@ -156,38 +153,38 @@ body {
   display: flex;
   flex-direction: column;
   grid-row: 1/2;
-  justify-items: center; }
+  justify-items: center;
+  align-items: center; }
 
 .divTituloU h1 {
-  color: #8f8fdc;
-  font-size: 70px;
+  color: #040405;
+  font-size: 60px;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
-  text-shadow: 5px 5px 15px black;
-  margin: 12px;
-  transform: rotateX(50deg);
-  animation: one 2s infinite;
-  animation-direction: alternate; }
+  text-shadow: 5px 5px 15px white;
+  margin: 12px; }
 
 .parrafoUbicacion {
   grid-row: 2/3;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 500px; }
 
 .card {
-  overflow: auto; }
+  overflow: auto;
+  background-color: rgba(157, 167, 207, 0.879);
+  border: inset 7px #7a7ad6; }
 
 .parrafoUbicacion img {
   border-radius: 250px 250px 250px;
   width: 400px;
-  height: 400px;
-  margin-left: 70px; }
+  height: 400px; }
 
 .flecha {
-  margin-top: 50px;
+  margin-top: 150px;
+  margin-bottom: 70px;
   grid-row: 3/4;
   width: 100%;
   display: flex;
@@ -208,39 +205,52 @@ body {
   .miMapa {
     width: 100%; }
   .parrafoUbicacion {
+    display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
   .flecha {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .col h1 {
   color: black;
   font-size: 60px;
-  text-align: center;
-  padding-bottom: 25px;
   text-shadow: 15px 15px 5px #484892;
-  margin: 12px; }
+  padding-right: 50px;
+  padding-bottom: 60px; }
 
-.imagen__grande img {
+.imagen__chica {
   margin-bottom: 5%;
   border-radius: 36px 36px 36px;
   border: dashed 5px #ababe8;
-  width: 90%;
+  width: 650px;
   height: 500px; }
+
+.carousel-fade {
+  border-top: double 6px #8080d6; }
 
 .rounded {
   margin-top: 80px;
-  border: dashed 10px #cfcfe9;
-  width: 350px;
+  margin-bottom: 60px;
+  border: dashed 6px #cfcfe9;
+  width: 400px;
   height: 350px; }
 
 .pieDePagina {
-  background-color: aqua;
+  background-color: rgba(36, 120, 255, 0.279);
   background-size: cover;
   border: 4px dotted gray;
   width: 100%; }
+  .pieDePagina .nav li {
+    margin-right: 22px; }
 
 .theBody {
   display: grid; }
@@ -286,9 +296,9 @@ body {
 
 @keyframes skew {
   0% {
-    transform: skewX(10deg); }
+    transform: skewX(8deg); }
   100% {
-    transform: skewX(-10deg); } }
+    transform: skewX(-8deg); } }
 
 @media (max-width: 768px) {
   .imgParrafo IMG {
@@ -301,7 +311,7 @@ body {
 
 .imgParrafo P {
   padding-right: 45px;
-  padding-left: 30px;
+  padding-left: 40px;
   border-left: 5px dashed rgba(108, 97, 231, 0.411);
   overflow: auto;
   width: 400PX;

@@ -12,41 +12,42 @@
     flex-direction:column;
     grid-row: 1/2;
     justify-items:center ;
+    align-items: center;
 }
 .divTituloU h1{
-    color: rgb(143, 143, 220);
-    font-size: 70px;
+    color: rgb(4, 4, 5);
+    font-size: 60px;
     text-align: center; 
     padding-top: 70px;
     padding-bottom: 70px;
-    text-shadow:  5px 5px 15px rgb(0, 0, 0);
+    text-shadow:  5px 5px 15px rgb(255, 255, 255);
     margin:12px;
-    transform: rotateX(50deg);
-    animation: one 2s infinite;
-    animation-direction: alternate;
+   
    
 }
 .parrafoUbicacion{
     grid-row: 2/3;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 500px;
     
 }
 .card{
     overflow: auto;
-
+    background-color: rgba(157, 167, 207, 0.879);
+    border: inset 7px rgb(122, 122, 214)
 }
 .parrafoUbicacion img{
 
     border-radius: 250px 250px 250px;
     width: 400px;
     height: 400px;
-    margin-left: 70px;
+   
 }
 .flecha{
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-bottom: 70px;
     grid-row: 3/4;
     width: 100%;
     display: flex;
@@ -60,8 +61,8 @@
         animation-direction: alternate;
     
 }
-}
 
+}
 
     
 .miMapa{
@@ -75,13 +76,19 @@
         
 }
   .parrafoUbicacion {
+      display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      width: 100%;
   }
   .flecha{
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+ 
+    
+  
     
 }

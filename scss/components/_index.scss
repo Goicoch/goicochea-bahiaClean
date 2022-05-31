@@ -47,10 +47,10 @@ display: grid;
 }
 @keyframes skew {
     0% {
-      transform: skewX(10deg);
+      transform: skewX(8deg);
     }
     100% {
-      transform: skewX(-10deg);
+      transform: skewX(-8deg);
     }
   }
 
@@ -70,7 +70,7 @@ display: grid;
 
 .imgParrafo P{
     padding-right: 45px;
-    padding-left: 30px;
+    padding-left: 40px;
     border-left: 5px dashed rgba(108, 97, 231, 0.411);
     overflow: auto;
     width: 400PX;
