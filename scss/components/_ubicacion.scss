@@ -21,10 +21,12 @@
    @extend %title-center;
     padding-bottom: 25px;
     text-shadow:$estiloTitulo;
+   
 }
 @media (max-width:768px){
     .divTituloU h1{
         font-size: 50px;
+        text-align: center;
     }
 }
 .parrafoUbicacion{
