@@ -26,7 +26,6 @@
   margin: 0; }
 
 body {
-  background: #9a9aed;
   background: linear-gradient(191deg, #4b9cde 39%, rgba(225, 225, 244, 0.992508) 50%, #958be7 69%); }
   body .navbar {
     background-color: #9a9aed; }

@@ -1,8 +1,8 @@
 
 *{
   @include reseteo-css;}
-  body{background:$colorFondo;
-      background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
+  body{
+    background: linear-gradient(191deg, rgba(75,156,222,1) 39%, rgba(225,225,244,0.9925077450201378) 50%, rgba(149,139,231,1) 69%);
   .navbar{
     background-color: $colorFondo;
       .nav-link {
