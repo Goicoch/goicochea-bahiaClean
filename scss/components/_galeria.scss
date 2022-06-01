@@ -5,12 +5,20 @@
     
 }
 .col h1{
+    font-size:$tamanioTitulos;
+    margin-top: auto;
     color: rgb(0, 0, 0);
-    font-size: map-get($tamanioTitle, tituloh1 );
-    text-shadow:  15px 15px 5px rgb(72, 72, 146);
-    padding-right: 40px;
-    padding-bottom: 60px;
+   @extend %title-center;
+    padding-bottom: 25px;
+    text-shadow:$estiloTitulo;
 }
+@media (max-width:768px){
+    .col h1{
+        font-size: 50px;
+    }
+}
+
+
     
 .imagen__chica{
     margin-bottom:5%;

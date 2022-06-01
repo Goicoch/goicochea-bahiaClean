@@ -37,20 +37,26 @@
 
 
 .titHerramientas h1{
+    font-size:$tamanioTitulos;
+    margin-top: auto;
     color: rgb(0, 0, 0);
-    font-size: $tamanioTitulos;
-    text-align: center; 
-    padding-bottom: 10px;
-    text-shadow: $estiloTitulo;
-    margin:12px;
-
+   @extend %title-center;
+    padding-bottom: 25px;
+    text-shadow:$estiloTitulo;
 }
+@media (max-width:768px){
+    .titHerramientas h1{
+        font-size: 50px;
+    }
+}
+
+
+
 .titHerramientas h2{
    color: rgb(11, 11, 14);
     font-size: 35px;
     text-align: center; 
     padding-bottom: 20px;
-    text-shadow: $estiloTitulo;
     margin:12px;
     
 }

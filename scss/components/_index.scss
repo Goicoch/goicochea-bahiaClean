@@ -9,20 +9,24 @@
     
 }
 .divTitulo h1{
-    color:  rgb(3, 3, 14);
-    font-size: $tamanioTitulos;
-    text-align: center; 
+    font-size:$tamanioTitulos;
+    margin-top: auto;
+    color: rgb(0, 0, 0);
+   @extend %title-center;
     padding-bottom: 25px;
-    text-shadow:  5px 5px 15px rgb(210, 219, 224);
-    margin:12px;
-   
+    text-shadow:$estiloTitulo;
+}
+@media (max-width:768px){
+    .divTitulo h1{
+        font-size: 50px;
+    }
 }
 .divTitulo h2{
     color: rgb(3, 3, 14);
     font-size: 40px;
     text-align: center; 
     padding-bottom: 90px;
-    text-shadow:  5px 5px 15px rgb(210, 219, 224);
+    text-shadow:$estiloTitulo;
     margin:12px;
 }
 

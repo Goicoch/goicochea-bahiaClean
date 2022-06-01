@@ -15,15 +15,17 @@
     align-items: center;
 }
 .divTituloU h1{
-    color: rgb(4, 4, 5);
-    font-size: 60px;
-    text-align: center; 
-    padding-top: 70px;
-    padding-bottom: 70px;
-    text-shadow:  5px 5px 15px rgb(255, 255, 255);
-    margin:12px;
-   
-   
+    font-size:$tamanioTitulos;
+    margin-top: auto;
+    color: rgb(0, 0, 0);
+   @extend %title-center;
+    padding-bottom: 25px;
+    text-shadow:$estiloTitulo;
+}
+@media (max-width:768px){
+    .divTituloU h1{
+        font-size: 50px;
+    }
 }
 .parrafoUbicacion{
     grid-row: 2/3;
