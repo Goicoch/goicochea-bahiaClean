@@ -2,16 +2,16 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    
+    .col h1{
+        font-size:$tamanioTitulos;
+        margin-top: auto;
+        color: rgb(0, 0, 0);
+       @extend %title-center;
+        padding-bottom: 25px;
+        text-shadow:$estiloTitulo;
+    }
 }
-.col h1{
-    font-size:$tamanioTitulos;
-    margin-top: auto;
-    color: rgb(0, 0, 0);
-   @extend %title-center;
-    padding-bottom: 25px;
-    text-shadow:$estiloTitulo;
-}
+
 @media (max-width:768px){
     .col h1{
         font-size: 50px;
@@ -26,11 +26,11 @@
     border: dashed 5px rgb(171, 171, 232);
     width:650px;
     height: 500px;
+    .carousel-fade{
+        border-top: double 6px rgb(128, 128, 214);
+       
+   }
 }
-.carousel-fade{
-     border-top: double 6px rgb(128, 128, 214);
-}
-
 .rounded{
     margin-top: 80px;
     margin-bottom: 60px;
@@ -38,6 +38,8 @@
     width: 400px;
     height: 350px;
 } 
+
+
 @media (max-width:768px){
     .col h1{
         font-size: 50px;

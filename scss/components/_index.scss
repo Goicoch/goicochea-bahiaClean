@@ -1,21 +1,24 @@
 
-.mainClass .divTitulo{
+ .divTitulo{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    
+    h1{
+        font-size:$tamanioTitulos;
+        margin-top: auto;
+        color: rgb(0, 0, 0);
+       @extend %title-center;
+        padding-bottom: 25px;
+        text-shadow:$estiloTitulo;
+   
+    }
+
 }
-.divTitulo h1{
-    font-size:$tamanioTitulos;
-    margin-top: auto;
-    color: rgb(0, 0, 0);
-   @extend %title-center;
-    padding-bottom: 25px;
-    text-shadow:$estiloTitulo;
-}
+
+
 @media (max-width:768px){
     .divTitulo h1{
         font-size: 50px;
@@ -36,16 +39,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    IMG{
+        animation: skew 2s infinite;
+        transform: skew(10deg);
+        animation-direction: alternate;
+        border: 3px dashed black;
+        border-radius: 65px 65px 65px;
+        width: 400PX;
+        height: 400PX;
+    }
 }
-.imgParrafo IMG{
-    animation: skew 2s infinite;
-    transform: skew(10deg);
-    animation-direction: alternate;
-    border: 3px dashed black;
-    border-radius: 65px 65px 65px;
-    width: 400PX;
-    height: 400PX;
-}
+
 @keyframes skew {
     0% {
       transform: skewX(8deg);
@@ -92,8 +96,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-.listaPreciosTitulo h3{
+    h3{
         display: inline-block;
         color: rgb(143, 143, 220);
         font-size: 40px;
@@ -101,4 +104,5 @@
         padding-top: 20px;
         padding-bottom: 25px;
         text-shadow:  5px 5px 15px rgb(0, 0, 0);
+}
 }
